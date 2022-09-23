@@ -9,9 +9,9 @@ public class ProgramClass {
 
     public String handleRequest(String url) {
         System.out.println(url);
-        if (url == "/") {
+        if (url.equals("/")) {
             return String.format("Number: %d", num);
-        } else if (url == "/increment") {
+        } else if (url.equals("/increment")) {
             num += 1;
             return String.format("Number incremented!");
         } else {
